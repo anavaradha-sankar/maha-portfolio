@@ -7,6 +7,9 @@ export default {
       colors: {
         ...colors,
         primaryTextColor: "var(--primary-text-color)",
+        secondaryTextColor: "var(--secondary-text-color)",
+        skillsDarkAccent: "var(--skills-dark-accent)",
+        skillsLightAccent: "var(--skills-light-accent)",
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"], // Overrides the default sans-serif
