@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Home } from "./pages/home";
-import "./styles.css";
+import './tailwind.css'; 
+import ColorBurst from "./components/colorBurst";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
@@ -36,7 +37,9 @@ function App() {
           } shadow-custom border-1 border-white`}
           onClick={toggleTheme}
         ></div>
+        <ColorBurst />
         <Home />
+        
       </div>
     </div>
   );

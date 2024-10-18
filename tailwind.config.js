@@ -9,7 +9,7 @@ export default {
         primaryTextColor: "var(--primary-text-color)",
       },
       fontFamily: {
-        sans: ["Outfit", "sans-serif"], // Overrides the default sans-serif
+        sans: ["Intel", "sans-serif"], // Overrides the default sans-serif
       },
       backgroundImage: (theme) => ({
         lightThemeGradient: "var(--light-theme-gradient)",

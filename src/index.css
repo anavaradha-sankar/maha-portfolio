@@ -1,21 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --theme-bg: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
+  --light-theme-bg: linear-gradient(180deg, #d9d9d9 0%, #f0f0f0 100%); /* Darker gray for light theme */
+  --dark-theme-bg: linear-gradient(180deg, #333333 0%, #4d4d4d 100%); /* Lighter gray for dark theme */
 
   --light-theme-gradient: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
-  --dark-theme-gradient: linear-gradient(180deg, #1a1a1a 0%, #4d4d4d 100%);
+  --dark-theme-gradient: linear-gradient(180deg, #1a1a1a 0%, #333333 100%);
 
-  --primary-text-color: #1a1a1a;
+  --primary-text-color: #1a1a1a; /* Primary text color for light theme */
+  --secondary-text-color: #e0e0e0; /* Lighter text color for dark theme */
+}
+
+.theme-light {
+  --theme-bg: var(--light-theme-bg);
+  --primary-text-color: var(--primary-text-color);
 }
 
 .theme-dark {
-  --theme-bg: linear-gradient(180deg, #1a1a1a 0%, #4d4d4d 100%);
-
-  --light-theme-gradient: linear-gradient(180deg, #ffffff 0%, #f0f0f0 100%);
-  --dark-theme-gradient: linear-gradient(180deg, #1a1a1a 0%, #4d4d4d 100%);
-
-  --primary-text-color: #cbcaca;
+  --theme-bg: var(--dark-theme-bg);
+  --primary-text-color: var(--secondary-text-color);
 }
