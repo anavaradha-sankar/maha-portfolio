@@ -10,13 +10,12 @@ export const Experience = () => {
   const experiences: WorkExperience[] = experiencesData.workExperience;
   return (
     <div className="flex flex-col text-primaryTextColor">
-      <div className="text-5xl lg:text-8xl font-bold">
+      <div className="text-5xl lg:text-8xl font-bold text-right">
         <h1>RELEVANT</h1>
         <h1>EXPERIENCE</h1>
       </div>
 
       <div className="flex flex-row w-full pt-20">
-        <div className="hidden md:block w-1/3"></div>
         <div className="w-full md:w-2/3">
           {experiences.map((experience, index) => (
             <div key={index} className="flex flex-col mb-8">
@@ -36,6 +35,7 @@ export const Experience = () => {
             </div>
           ))}
         </div>
+        <div className="hidden md:block w-1/3"></div>
       </div>
     </div>
   );
