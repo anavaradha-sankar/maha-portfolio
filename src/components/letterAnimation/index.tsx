@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import './LetterAnimation.css';
+import './letterAnimation.css';
 
 interface LetterAnimationProps {
   text: string;
