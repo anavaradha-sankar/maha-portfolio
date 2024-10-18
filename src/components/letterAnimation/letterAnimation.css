@@ -1,0 +1,26 @@
+/* LetterAnimation.css */
+.letter-animation {
+  display: flex;
+  flex-direction: column; /* Stack words vertically */
+  height: 100vh; /* Full viewport height */
+  width: 95vw; /* Full viewport width */
+  overflow: hidden; /* Prevent overflow of words */
+  text-align: left; /* Center the text */
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  opacity: .5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.word {
+  display: block; /* Each word occupies its own line */
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+.letter {
+  display: inline-block; /* Each letter is inline-block to allow animation */
+  opacity: 0; /* Letters start hidden */
+}
