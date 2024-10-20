@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Home } from "./pages/home";
-import './tailwind.css'; 
-import ColorBurst from "./components/colorBurst";
+import "./styles.css";
+import ColorBurst from "./components/color-burst";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false);
@@ -39,7 +39,6 @@ function App() {
         ></div>
         <ColorBurst />
         <Home />
-        
       </div>
     </div>
   );

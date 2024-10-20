@@ -1,4 +1,4 @@
-import LetterAnimation from "../letterAnimation";
+import LetterAnimation from "../letter-animation";
 
 export const Banner = () => {
   return (
